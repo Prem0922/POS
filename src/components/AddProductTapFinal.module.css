@@ -1,0 +1,80 @@
+.formBox {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.contentBox {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #3476f7;
+  border: none;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  transition: background 0.18s, transform 0.18s;
+}
+.nextArrow:hover, .nextArrow:focus {
+  background: #2456b3;
+  transform: scale(1.08);
+}
+.nextArrow svg {
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+.heading {
+  color: #2456b3;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 48px;
+  text-align: center;
+  text-shadow: none;
+}
+
+.subtext {
+  color: #2456b3;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 48px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.tapCardImg {
+  display: block;
+  margin: 0 auto 48px auto;
+  width: 340px;
+  height: auto;
+  max-width: 100%;
+} 
