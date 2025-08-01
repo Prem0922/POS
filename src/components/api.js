@@ -85,6 +85,40 @@ export async function getAllCustomers() {
   return res.json();
 }
 
+export async function getRandomCard() {
+  try {
+    // Use the working /cards/ endpoint instead of /cards/random
+    const res = await fetch(`${BASE_URL}/cards/`, {
+      headers: withApiKeyHeaders(),
+    });
+    
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+    
+    const cards = await res.json();
+    
+    if (!cards || cards.length === 0) {
+      throw new Error('No cards found in database');
+    }
+    
+    // Select a random card from the array
+    const randomIndex = Math.floor(Math.random() * cards.length);
+    const randomCard = cards[randomIndex];
+    
+    return {
+      id: randomCard.id,
+      card_number: randomCard.id,
+      balance: randomCard.balance,
+      status: randomCard.status,
+      type: randomCard.type
+    };
+  } catch (error) {
+    console.error('getRandomCard error:', error);
+    throw error;
+  }
+}
+
 export async function getAllCardTypes() {
   return [
     'Account Based Card',
