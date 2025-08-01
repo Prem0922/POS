@@ -208,4 +208,28 @@
   border-radius: 0;
   box-shadow: none;
   padding: 32px;
+}
+
+.cardNumberDisplay {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(52, 118, 247, 0.08);
+}
+
+.cardNumberLabel {
+  color: #2456b3;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.cardNumberValue {
+  color: #181818;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: monospace;
+  letter-spacing: 2px;
 } 
