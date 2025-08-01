@@ -59,6 +59,7 @@ function CardBalanceTap() {
         style={{ cursor: 'pointer' }}
       />
       <div className={styles.title}>Please tap your card</div>
+      <div className={styles.orText}>OR</div>
       
       <form className={styles.searchForm} onSubmit={handleCardNumberSubmit} autoComplete="off">
         <label htmlFor="cardNumber" className={styles.label}>Enter Card Number</label>
